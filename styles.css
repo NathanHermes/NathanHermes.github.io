@@ -1,194 +1,46 @@
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e1d8ea;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  background: rgb(31, 32, 42);
 }
-
-body>form {
-    width: 80%;
-    margin: 2rem 0;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #4c2882;
-    border-radius: 2vh;
+body > main {
+  width: auto;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 3%;
+  border-radius: 1rem;
 }
-
-form>input {
-    width: 80%;
-    height: 4vh;
-    padding: 1rem;
-    border-radius: 1vh;
-    margin-bottom: 1vh;
+body > main > section:first-of-type {
+  margin: 2vh 0;
 }
-
-form>input::placeholder {
-    color: #1f132d;
+body > main > section > input {
+  width: 10%;
+  height: 3vh;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 12%;
+  background: rgb(240, 240, 240);
+  border: 1px solid rgb(0, 0, 0);
 }
-
-form>div.dropdown-estados {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-div.dropdown-estados>label {
-    width: 100%;
-}
-
-div.dropdown-estados>select {
-    width: 100%;
-    height: 4vh;
-    border-radius: 1vh;
-}
-
-div.dropdown-estados>select>option {
-    background-color: #401d76;
-    color: #e1d8ea;
-    border: 0;
-}
-
-div.checkbox-comidas {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-}
-
-div.checkbox-comidas>p {
-    margin-bottom: .5rem;
-}
-
-div.checkbox-comidas>label {
-    display: flex;
-    align-items: center;
-    padding: 0 .3rem;
-    margin: .1rem 0;
-}
-
-div.checkbox-comidas>label:nth-child(2n) {
-    background-color: #6b4996;
-}
-
-div.checkbox-comidas>label>input {
-    margin-right: .3rem;
-}
-
-div.radio-forma {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-}
-
-div.radio-forma>div.radio-group-input {
-    display: flex;
-    align-items: center;
-    margin: .1rem .5rem;
-}
-
-div.radio-forma>div.radio-group-input>div.radio-input {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-div.radio-forma>div.radio-group-input>div.radio-input>input {
-    margin-right: .3rem;
-}
-
-div.buttons {
-    width: 80%;
-    display: flex;
-    align-items: center;
-}
-
-div.buttons>button {
-    width: 100%;
-    height: 4vh;
-    border-radius: 1vh;
-    margin: 0 .5rem;
-}
-
-div.buttons>button:first-child {
-    background-color: #401d76;
-}
-
-div.buttons>button:last-child {
-    background-color: #a68fc0;
-}
-
-div.menssagens-resposta {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.menssagens-resposta>div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-}
-
-div.menssagens-resposta>div.card-resposta-erro>h4 {
-    width: 100%;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-    border-radius: 1vh 1vh 0 0;
-    background-color: #02aa00;
-}
-
-div.menssagens-resposta>div.card-resposta-erro>p {
-    width: 90%;
-    margin: .5rem 0;
-    font-size: .9rem;
-    color: #02aa00;
-}
-
-div.menssagens-resposta>div.card-resposta-sucesso>h4 {
-    width: 100%;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-    border-radius: 1vh 1vh 0 0;
-    background-color: #401d76;
-}
-
-div.menssagens-resposta>div.card-resposta-sucesso>p {
-    width: 90%;
-    margin: .5rem 0;
-    font-size: .9rem;
-    color: #401d76;
-}
-
-@media (min-width: 1024px) {
-    body {
-        flex-direction: initial;
-    }
-    body>form {
-        width: 40%;
-        margin: 0 10%;
-    }
-    div.menssagens-resposta {
-        width: 40%;
-        margin: 0 10%;
-    }
+/* body > main > section > table {
+  margin: 1rem 0;
+} */
+td {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem;
+  color: rgb(0, 0, 0);
 }
